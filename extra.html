@@ -4,16 +4,256 @@
 <head>
   <title>Check out</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"> -->
-  <link rel="stylesheet" href="style.default.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
+  <link rel="stylesheet" href="style.default.css" id="theme-stylesheet">
+
+
 </head>
 
 <body>
+  <div id="all">
+    <!-- Top bar-->
 
-  
+    <div id="content" style="background: gray;">
+      <div class="container" style="background: #fff;border: 1px solid #ddd;width: 1365px;">
+        <p style="margin-bottom: 6px;">Already have an account: <a href="">Login here</a></p>
 
+        <div class="row">
+          <div id="checkout" class="col-lg-4 ">
+            <div class="box border-bottom-0 chek-left">
+              <div class="box-header mt-0">
+                <h5 style="text-transform: uppercase; padding: 10px 0 0 8px ;">Shipping Address</h5>
+              </div>
 
+              <form method="get" action="shop-checkout2.html" class="chek-form1">
+                <div class="content">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <label for="firstname">Email Address*</label>
+                        <input type="email" class="form-control">
+                        <i>You Can Create An Account After Checkout</i>
+                      </div>
 
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="firstname">Firstname*</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="lastname">Lastname*</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <label for="firstname">Street Address*</label>
+                        <input type="text" class="form-control"></br>
+                        <input type="text" class="form-control"></br>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="company">State/ Province*</label>
+                        <select class="form-control">
+                          <option value="">Select</option>
+                          <option value="">Rajasthan</option>
+                          <option value="">Maharastra</option>
+                          <option value="">Gujrat</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="street">City*</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="company">Zip/Postal Code*</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="company">Country*</label>
+                        <select class="form-control">
+                          <option value="">Select</option>
+                          <option value="">India</option>
+                          <option value="">USA</option>
+                          <option value="">UK</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <label for="company">Phone Number*</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <!-- <div class="box mb-4 p-0 chek-left">
+              <div class="box-header mt-0">
+                <h5 style="text-transform: uppercase; padding: 10px 0 0 8px ;">Shipping And Handing Fee</h5>
+              </div>
+              <div class="table-responsive">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>Cart subtotal</td>
+                      <th style="text-align: right;font-weight: normal;">&#8377; 446.00</th>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+            </div> -->
+            <div class="col-lg-12 street">
+              <div class="box mb-12 p-0 chek-left">
+                <div class="box-header mt-0">
+                  <h5 style="text-transform: uppercase; padding: 10px 0 0 8px ;">Payment Method </h5>
+                </div>
+                <div class="table-responsive">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <td> <input type="radio" name="payment" value="payment2"> Pay online by credit/debit card,
+                          netbanking, upi or wallet</td>
+                      </tr>
+                      <tr>
+                        <td><input type="radio" name="payment" value="payment1"> Cash On Delivery</td>
+                      </tr>
+                      <tr>
+                        <td style="height: 44px;">Apply Discount Code</td>
+                      </tr>
+                      <tr>
+                        <td><input type="text"
+                            style="height: 35px; width: 59%;padding: 4px 6px; border: 0px solid #ddd;"
+                            placeholder="Enter Discount Code">
+                          <input style="height: 35px;" type="button" value="APPLY DISCOUNT" class="apply-discount"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-4">
+            <div class="box mb-4 p-0 chek-left">
+              <div class="box-header mt-0">
+                <h5 style="text-transform: uppercase; padding: 10px 0 0 8px ;">Order summary</h5>
+              </div>
+              <!-- <div class="table-responsive">
+                <table class="table" border="0">
+                  <tbody>
+                    <tr>
+                      <td>Cart subtotal</td>
+                      <th style="padding: 0;font-weight: normal;">&#8377; 446.00</th>
+                    </tr>
+                    <tr>
+                      <td>Shipping Standard Shipping</td>
+                      <th style="padding: 0 0 0 11px;font-weight: normal;">&#8377; 10.00</th>
+                    </tr>
+                    <tr>
+                      <td>Tax</td>
+                      <th style="padding: 0 0 0 11px;font-weight: normal;">&#8377; 0.00</th>
+                    </tr>
+                    <tr class="total">
+                      <br>
+                      <hr noshade style="color: blue">
+                      <td><strong>Order Total</strong></td>
+                      <th>&#8377;456.00</th>
+                    </tr>
+
+                    <tr>
+                      <td>1 Item In Cart</td>
+                    </tr>
+                    <tr class="col-md-12" style="text-align: left;">
+                      <td class="col-md-4 " style="text-align: left;"><img src="a.jpg" height="100px" width="100px"> </td>
+                      <td class="col-md-8" style="text-align: left;"> Printed Top &#8377; 100.00 &nbsp;
+                        <br> Qty:1</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <button type="submit" class="btn btn-primary chek-place-order">Place Order<i
+                    class="fa fa-chevron-right"></i></button>
+
+              </div> -->
+              <div class="col-md-12" style="padding: 0;">
+                <div class="col-md-6" style="padding: 0;">
+                  <h5 align="left">CART SUBTOTAL</h5>
+                </div>
+                <div class="col-md-6" style="padding: 0;">
+                  <h5 align="right">$267.86</h5>
+                </div>
+              </div>
+              <div class="col-md-12" style="padding: 0;">
+                <div class="col-md-6" style="padding: 0;">
+                  <h5 align="left">SHIPPING</h5>
+                </div>
+                <div class="col-md-6" style="padding: 0;">
+                  <h5 align="right">$26</h5>
+                </div>
+              </div>
+              <div class="col-md-12" style="padding: 0;">
+                <div class="col-md-6" style="padding: 0;">
+                  <h5 align="left">TAX</h5>
+                </div>
+                <div class="col-md-6" style="padding: 0;">
+                  <h5 align="right">$267.86</h5>
+                </div>
+              </div>
+              <hr style="border: 0.4px solid rgb(221, 221, 221)">
+              <div class="col-md-12" style="padding: 0;">
+                <div class="col-md-6" style="padding: 0;">
+                  <h4 style="font-weight: 550;" align="left">ORDER TOTAL</h4>
+                </div>
+              </div>
+              <div class="col-md-12" style="padding: 0;">
+                <h4 align="left" style="margin-left: -1rem;">1 Item in Cart</h4>
+
+              </div>
+              <hr style="border: 0.4px solid rgb(221, 221, 221)">
+              <div class="col-md-12" style="padding: 0;">
+                <div class="col-md-8">
+                  <div class="col-md-4">
+                    <img style="margin-left: -3.6rem;" src="a.jpg" width="90" alt="">
+                  </div>
+                  <div class="col-md-8">
+                    <p style="vertical-align: 50%;">Pencil Skirt ₹267.86
+                    </p>
+                    <p>Qty: 1</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+
+                </div>
+
+              </div>
+              <button type="submit" class="btn btn-primary chek-place-order" style="height: 40px;">Place Order<i
+                  class="fa fa-chevron-right"></i></button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 
